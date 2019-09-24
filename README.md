@@ -41,7 +41,7 @@ Drop this repository into the \<openframeworksfolder>/addons/ folder
 #### Xcode
 I've included an Xcode example that should be ready to use. But when building a new example:
 * Drag the osx folder containing the three .dylib files in libs/lib into the project. Select Copy Items if Needed & Add to Targets. After added it should look like:  
-![](https://raw.githubusercontent.com/aaronsherwood/ofxRSSDK/master/assets/draginhere.png)
+![](https://raw.githubusercontent.com/aaronsherwood/ofxRSSDK/master/assets/lookslike.png)
 * In Build Settings add '../osx' to the Runpath Search Paths (you can search by 'rpath' for this)
 
 #### Visual Studio
