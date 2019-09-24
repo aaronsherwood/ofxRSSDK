@@ -51,7 +51,7 @@ I've included an Xcode example that should be ready to use. But when building a 
 * Under Linker > General > Additional Library Directories > (Edit...) add a new entry by typing in `.\bin`
 * Under Input > Additional Dependencies > (Edit...) add a new entry by typing in `reasense2.lib`
 
-##### Old Stuff
+##### Old Stuff (might be useful)
 Examples have a relative path to the RealSenseSDK 2.19.1 inside the ofxRSSDK/libs folder.
 
 if otherwise, change the following:
