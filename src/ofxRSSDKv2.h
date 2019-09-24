@@ -460,7 +460,7 @@ namespace ofxRSSDK
 		void printDeviceInfo();
 
 	private:
-		float RSDevice::get_depth_scale(rs2::device dev);
+		float get_depth_scale(rs2::device dev);
 
 		int depthWidth, depthHeight, videoWidth, videoHeight;
 

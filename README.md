@@ -21,28 +21,31 @@ Untested:
 
 Tested:
 * Windows 10 (Build 1803 or later)
+* Mac OSX (El Capitan 10.11.6 )
 
 Untested:
 * Ubuntu 16.04/18.04 LTS (Linux Kernels 4.4, 4.8 ,4.10, 4.13 and 4.15)
 * Windows 8.1 *
-* Mac OS* (High Sierra 10.13.2)
 
 ****hardware frame synchronization is not available for the D400 series
 
 ### Dependecies
 
-* Microsoft Visual Studio Community edition 2017 https://visualstudio.microsoft.com/de/downloads/
-* Openframeworks release 0.10.0 [download page](http://openframeworks.cc/download).
-* Openframeworks addon [ofxGuiExtended](https://github.com/maybites/ofxGuiExtended)(use my fork)
+* Openframeworks release 0.10.x [download page](http://openframeworks.cc/download).
+* Openframeworks addon [ofxGuiExtended](https://github.com/maybites/ofxGuiExtended)
 
 ### Instructions
 
-drop this repositoriy into the \<openframeworksfolder>/apps/\<yourappfolder>
+Drop this repository into the \<openframeworksfolder>/addons/ folder
 
-drop the addons into the \<openframeworksfolder>/addons/ folder
+#### Xcode
+I've included an Xcode example that should be ready to use. But when building a new example:
+* Drag the osx folder containing the three .dylib files in libs/lib into the project. Select Copy Items if Needed & Add to Targets. After added it should look like:
+![alt text](https://github.com/adam-p/markdown-here/raw/master/src/common/images/icon48.png)
+* In Build Settings add '..osx' to the Runpath Search Paths (you can search by 'rpath' for this)
 
 #### Visual Studio
-Examles have a realtive path to the RealSenseSDK 2.19.1 inside the ofxRSSDK/libs folder.
+Examples have a relative path to the RealSenseSDK 2.19.1 inside the ofxRSSDK/libs folder.
 
 if otherwise, change the following:
 
@@ -51,8 +54,8 @@ if otherwise, change the following:
 
 ## credits
 
-Martin Froehlich
+Aaron Sherwood
 
-this addon is based on https://github.com/SethGibson/ofxRSSDK, however it has been heavily altered on order to make it compatible with the current RSSDK.
+this addon is based on https://github.com/tecartlab/ofxRSSDK & https://github.com/SethGibson/ofxRSSDK, however it has been heavily altered on order to make it compatible with the current RSSDK.
 
-contains the relevant libraries/includes from Intel® RealSense™ SDK 2.0 (build 2.19.1) https://github.com/IntelRealSense/librealsense
+contains the relevant libraries/includes from Intel® RealSense™ SDK 2.0 (build 2.20.1) https://github.com/IntelRealSense/librealsense

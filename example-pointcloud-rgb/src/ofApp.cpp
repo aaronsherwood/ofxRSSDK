@@ -9,7 +9,7 @@ void ofApp::setup()
 
 	realSense->checkConnectedDialog();
 
-	//realSense->hardwareReset();
+//	realSense->hardwareReset();
 
 	ofLogNotice("Device detected..");
 	gui_post.setup("PostProcessing", "postprocessingSetup", 0, 0); // most of the time you don't need a name but don't forget to call setup
@@ -27,7 +27,7 @@ void ofApp::setup()
 	gui_post.add(realSense->param_filterTemporal_persistency);
 
 	//realSense->enablePointCloud(CloudRes::FULL_RES);
-	realSense->setPointCloudRange(100.0f,1000.0f);
+//	realSense->setPointCloudRange(100.0f,1000.0f);
 
 	gui_device.setup("Device", "deviceSettings", 200, 0);
 
@@ -54,14 +54,14 @@ void ofApp::update()
 	if (realSense->update(ofxRSSDK::PointCloud::INFRALEFT)) {
 		// if a frame has been updated, the code continues in here,
 		// in case you need to do something special...
-		/*
+		
 		glm::vec2 col = glm::vec2(realSense->getDepthWidth() / 2, realSense->getDepthHeight() / 2);
 		glm::vec3 d_pt = realSense->getSpacePointFromDepthFrameCoord(col);
 		cout << "color pixel x=" << col.x << ", y=" << col.y << endl;
 		cout << "depth pixel x=" << d_pt.x << ", y=" << d_pt.y << ", z =" << d_pt.z << endl;
 		float distance = realSense->getSpaceDistanceFromDepthFrame(col);
 		cout << "distance =" << distance << endl;
-		*/
+		
 	}
 }
 

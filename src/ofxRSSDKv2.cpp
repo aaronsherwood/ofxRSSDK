@@ -203,8 +203,8 @@ namespace ofxRSSDK
 			if (mIsCapturing) {
 				// we are setting the depth units to one millimeter (default)
 				auto sensor = rs2Device.first<rs2::depth_sensor>();
-				sensor.set_option(RS2_OPTION_DEPTH_UNITS, 0.001);
-
+				//sensor.set_option(RS2_OPTION_DEPTH_UNITS, 0.001);
+               
 				// Capture 30 frames to give autoexposure, etc. a chance to settle
 				for (auto i = 0; i < 30; ++i) rs2Pipe->wait_for_frames();
 			}
