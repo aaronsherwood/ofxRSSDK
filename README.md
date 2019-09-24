@@ -45,6 +45,12 @@ I've included an Xcode example that should be ready to use. But when building a 
 * In Build Settings add '../osx' to the Runpath Search Paths (you can search by 'rpath' for this)
 
 #### Visual Studio
+* Click on the project in Visual Studio
+* Click Properties (the wrench)
+* Under Linker->General->Additional Library Directories add '.\bin'
+
+
+##### Old Stuff
 Examples have a relative path to the RealSenseSDK 2.19.1 inside the ofxRSSDK/libs folder.
 
 if otherwise, change the following:
