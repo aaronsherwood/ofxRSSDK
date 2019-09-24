@@ -42,13 +42,14 @@ Drop this repository into the \<openframeworksfolder>/addons/ folder
 I've included an Xcode example that should be ready to use. But when building a new example:
 * Drag the osx folder containing the three .dylib files in libs/lib into the project. Select Copy Items if Needed & Add to Targets. After added it should look like:  
 ![](https://raw.githubusercontent.com/aaronsherwood/ofxRSSDK/master/images/lookslike.png)
-* In Build Settings add '../osx' to the Runpath Search Paths (you can search by 'rpath' for this)
+* In Build Settings add `../osx` to the Runpath Search Paths (you can search by `rpath` for this)
 
 #### Visual Studio
+* Add the realsense2.dll & realsense2.lib files to the bin folder for the project
 * Click on the project in Visual Studio
 * Click Properties (the wrench)
-* Under Linker->General->Additional Library Directories add '.\bin'
-
+* Under Linker->General->Additional Library Directories add `.\bin`
+* Under Input->Additional Dependencies add `rea;semnse2.lib`
 
 ##### Old Stuff
 Examples have a relative path to the RealSenseSDK 2.19.1 inside the ofxRSSDK/libs folder.
