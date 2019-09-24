@@ -45,7 +45,7 @@ I've included an Xcode example that should be ready to use. But when building a 
 * In Build Settings add `../osx` to the Runpath Search Paths (you can search by `rpath` for this)
 
 #### Visual Studio
-* Add the realsense2.dll & realsense2.lib files to the bin folder for the project
+* Copy the realsense2.dll & realsense2.lib files found in libs/lib/windows folder to the bin folder for the project
 * Click on the project in Visual Studio
 * Click Properties (the wrench)
 * Under Linker > General > Additional Library Directories > (Edit...) add a new entry by typing in `.\bin`
