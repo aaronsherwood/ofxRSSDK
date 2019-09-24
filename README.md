@@ -48,8 +48,8 @@ I've included an Xcode example that should be ready to use. But when building a 
 * Add the realsense2.dll & realsense2.lib files to the bin folder for the project
 * Click on the project in Visual Studio
 * Click Properties (the wrench)
-* Under Linker->General->Additional Library Directories add by typing in `.\bin`
-* Under Input->Additional Dependencies add by typing in `reasense2.lib`
+* Under Linker > General > Additional Library Directories > (Edit...) add a new entry by typing in `.\bin`
+* Under Input > Additional Dependencies > (Edit...) add a new entry by typing in `reasense2.lib`
 
 ##### Old Stuff
 Examples have a relative path to the RealSenseSDK 2.19.1 inside the ofxRSSDK/libs folder.
