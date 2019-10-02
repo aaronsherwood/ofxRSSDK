@@ -458,6 +458,12 @@ namespace ofxRSSDK
 		Print the info of the currently running device or the first device detected
 		*/
 		void printDeviceInfo();
+        
+        ofPixels		mVideoFrame;
+        ofPixels		mDepthFrame;
+        ofPixels		mInfraLeftFrame;
+        // current Depth frame
+        rs2::frame rs2Depth;
 
 	private:
 		float get_depth_scale(rs2::device dev);
@@ -487,9 +493,6 @@ namespace ofxRSSDK
 		glm::vec2			mVideoStreamSize;
 		glm::vec2			mInfraredStreamSize;
 
-		ofPixels		mVideoFrame;
-		ofPixels		mDepthFrame;
-		ofPixels		mInfraLeftFrame;
 
 		// Declare depth colorizer for pretty visualization of depth data
 		rs2::colorizer rs2Color_map;
@@ -511,8 +514,7 @@ namespace ofxRSSDK
 		// current frame
 		rs2::frameset rs2FrameSet;
 
-		// current Depth frame
-		rs2::frame rs2Depth;
+		
 
 		struct rs2_intrinsics rs2DepthIntrinsics;
 		struct rs2_intrinsics rs2VideoIntrinsics;

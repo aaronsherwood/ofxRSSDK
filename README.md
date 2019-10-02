@@ -49,7 +49,7 @@ I've included an Xcode example that should be ready to use. But when building a 
 * Click on the project in Visual Studio
 * Click Properties (the wrench)
 * Under Linker > General > Additional Library Directories > (Edit...) add a new entry by typing in `.\bin`
-* Under Input > Additional Dependencies > (Edit...) add a new entry by typing in `reasense2.lib`
+* Under Input > Additional Dependencies > (Edit...) add a new entry by typing in `realsense2.lib`
 
 ##### Old Stuff (might be useful)
 Examples have a relative path to the RealSenseSDK 2.19.1 inside the ofxRSSDK/libs folder.

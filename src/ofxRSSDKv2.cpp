@@ -7,6 +7,17 @@
 // projection: https://github.com/IntelRealSense/librealsense/wiki/Projection-in-RealSense-SDK-2.0
 // howtos: https://github.com/IntelRealSense/librealsense/wiki/API-How-To#get-depth-units
 // Aligning: https://github.com/IntelRealSense/librealsense/tree/master/examples/align
+// D400 data sheet: https://www.mouser.com/pdfdocs/Intel_D400_Series_Datasheet.pdf
+
+/*
+Z [16 bits] Depth Only Mode
+1280x720 6,15,30
+848X480 6,15,30,60,90
+640x480 6,15,30,60,90
+640x360 6,15,30,60,90
+480x270 6,15,30,60,90
+424x240 6,15,30,60,90
+*/
 
 namespace ofxRSSDK
 {	
@@ -196,7 +207,7 @@ namespace ofxRSSDK
 
 			auto video_stream = rs2PipeLineProfile.get_stream(RS2_STREAM_COLOR).as<rs2::video_stream_profile>();
 			rs2VideoIntrinsics = video_stream.get_intrinsics();
-
+//
 			auto infra_stream = rs2PipeLineProfile.get_stream(RS2_STREAM_INFRARED).as<rs2::video_stream_profile>();
 			rsInfraLeftIntrinsics = infra_stream.get_intrinsics();
 
@@ -305,7 +316,7 @@ namespace ofxRSSDK
 			mInfraLeftFrame.setFromExternalPixels((unsigned char *)rs2IRFrame.get_data(), rs2IRFrame.get_width(), rs2IRFrame.get_height(), 1);
 
 			// Generate the pointcloud and texture mapping	s
-			rs2Points = rs2PointCloud.calculate(rs2Depth);
+//			rs2Points = rs2PointCloud.calculate(rs2Depth);
 
 			ofPixels colors;
 
@@ -315,85 +326,85 @@ namespace ofxRSSDK
 				rs2PointCloud.map_to(rs2DepthVideoFrame);
 				colors = mDepthFrame;
 				break;
-			case 1:
-				rs2PointCloud.map_to(rs2VideoFrame);
-				colors = mVideoFrame;
-				break;
-			case 2:
-				rs2PointCloud.map_to(rs2IRFrame);
-				colors = mInfraLeftFrame;
-				break;
+//			case 1:
+//				rs2PointCloud.map_to(rs2VideoFrame);
+//				colors = mVideoFrame;
+//				break;
+//			case 2:
+//				rs2PointCloud.map_to(rs2IRFrame);
+//				colors = mInfraLeftFrame;
+//				break;
 			}
 
-			int dWidth = (int)mDepthStreamSize.x;
-			int dHeight = (int)mDepthStreamSize.y;
-			int cWidth = colors.getWidth();
-			int cHeight = colors.getHeight();
-
-			int length = dHeight * dWidth;
-
-			// if the point cloud has changed its size, rescale the data container
-			if (length != mPointCloud.getVertices().size()) {
-				// setting also the depth intrinsics when the cloud size changes
-				rs2DepthIntrinsics = rs2Depth.get_profile().as<rs2::video_stream_profile>().get_intrinsics();
-				mPointCloud.clear();
-				for (int i = 0; i < length; i++) {
-					mPointCloud.addVertex(glm::vec3(0, 0, 0));
-					mPointCloud.addTexCoord(glm::vec2(0, 0));
-					mPointCloud.addColor(ofDefaultColorType());
-				}
-				cout << "created new depth point cloud w: " << dWidth << " h: " << dHeight << endl;
-				//cout << "created new mesh: " << dHeight << "/" << dWidth << endl;
-			}
+//			int dWidth = (int)mDepthStreamSize.x;
+//			int dHeight = (int)mDepthStreamSize.y;
+//			int cWidth = colors.getWidth();
+//			int cHeight = colors.getHeight();
+//
+//			int length = dHeight * dWidth;
+//
+//			// if the point cloud has changed its size, rescale the data container
+//			if (length != mPointCloud.getVertices().size()) {
+//				// setting also the depth intrinsics when the cloud size changes
+//				rs2DepthIntrinsics = rs2Depth.get_profile().as<rs2::video_stream_profile>().get_intrinsics();
+//				mPointCloud.clear();
+//				for (int i = 0; i < length; i++) {
+//					mPointCloud.addVertex(glm::vec3(0, 0, 0));
+//					mPointCloud.addTexCoord(glm::vec2(0, 0));
+//					mPointCloud.addColor(ofDefaultColorType());
+//				}
+//				cout << "created new depth point cloud w: " << dWidth << " h: " << dHeight << endl;
+//				//cout << "created new mesh: " << dHeight << "/" << dWidth << endl;
+//			}
 
 			//float firstTime = ofGetElapsedTimef();  
 
 			// get the point cloud data
-			auto vertices = rs2Points.get_vertices();              // get vertices
-			auto texCoords = rs2Points.get_texture_coordinates();  // get vertices
+//			auto vertices = rs2Points.get_vertices();              // get vertices
+//			auto texCoords = rs2Points.get_texture_coordinates();  // get vertices
 
 			// get the individual pointers to the data container
-			glm::vec3* pVertices		= mPointCloud.getVerticesPointer();
-			glm::vec2* pTexCoords		= mPointCloud.getTexCoordsPointer();
-			ofDefaultColorType* pColors = mPointCloud.getColorsPointer();
+//			glm::vec3* pVertices		= mPointCloud.getVerticesPointer();
+//			glm::vec2* pTexCoords		= mPointCloud.getTexCoordsPointer();
+//			ofDefaultColorType* pColors = mPointCloud.getColorsPointer();
 
-			int i_dOrig, i_dTarget;
-			float relHeight = (float)cHeight / (float)dHeight;
-			float relWidth = (float)cWidth / (float)dWidth;
-			int step = 1;
-			int cx, cy, bx, by, ay;
-
-			// step through all the points inside the camera pointcloud
-			// and copy the data into the data containers
-			#pragma omp parallel for schedule(dynamic) //Using OpenMP to try to parallelise the loop
-			for (int dy = 0; dy < dHeight; dy += step)
-			{
-				ay = dy * dWidth;
-				by = ay / (step * step);
-				cy = dy * relHeight;
-				auto pxlLine = colors.getLine(cy);
-
-				for (int dx = 0; dx < dWidth; dx += step)
-				{
-					cx = dx * relHeight;
-					auto pxl = pxlLine.getPixel(cx);
-
-					i_dOrig = ay + dx;
-
-					i_dTarget = by + dx / step;
-	
-					pVertices[i_dTarget].x = vertices[i_dOrig].x;
-					pVertices[i_dTarget].y = vertices[i_dOrig].y;
-					pVertices[i_dTarget].z = vertices[i_dOrig].z;
-
-					pTexCoords[i_dTarget].x = texCoords[i_dOrig].u;
-					pTexCoords[i_dTarget].y = texCoords[i_dOrig].v;
-
-					pColors[i_dTarget].r = pxl[0] / 255.;
-					pColors[i_dTarget].g = pxl[1] / 255.;
-					pColors[i_dTarget].b = pxl[2] / 255.;
-				}
-			}
+//			int i_dOrig, i_dTarget;
+//			float relHeight = (float)cHeight / (float)dHeight;
+//			float relWidth = (float)cWidth / (float)dWidth;
+//			int step = 1;
+//			int cx, cy, bx, by, ay;
+//
+//			// step through all the points inside the camera pointcloud
+//			// and copy the data into the data containers
+//			#pragma omp parallel for schedule(dynamic) //Using OpenMP to try to parallelise the loop
+//			for (int dy = 0; dy < dHeight; dy += step)
+//			{
+//				ay = dy * dWidth;
+//				by = ay / (step * step);
+//				cy = dy * relHeight;
+//				auto pxlLine = colors.getLine(cy);
+//
+//				for (int dx = 0; dx < dWidth; dx += step)
+//				{
+//					cx = dx * relHeight;
+//					auto pxl = pxlLine.getPixel(cx);
+//
+//					i_dOrig = ay + dx;
+//
+//					i_dTarget = by + dx / step;
+//	
+//					pVertices[i_dTarget].x = vertices[i_dOrig].x;
+//					pVertices[i_dTarget].y = vertices[i_dOrig].y;
+//					pVertices[i_dTarget].z = vertices[i_dOrig].z;
+//
+//					pTexCoords[i_dTarget].x = texCoords[i_dOrig].u;
+//					pTexCoords[i_dTarget].y = texCoords[i_dOrig].v;
+//
+//					pColors[i_dTarget].r = pxl[0] / 255.;
+//					pColors[i_dTarget].g = pxl[1] / 255.;
+//					pColors[i_dTarget].b = pxl[2] / 255.;
+//				}
+//			}
 
 			/*
 			float lastTime = ofGetElapsedTimef();
@@ -401,8 +412,8 @@ namespace ofxRSSDK
 			cout << "elapsed time " << lastTime - firstTime  << endl;
 			*/
 			
-			param_deviceProjectorTemparature = ofToString(get_deviceProjectorTemperature()) +  " [deg]";
-			param_deviceAsicTemparature = ofToString(get_deviceProjectorTemperature()) + " [deg]";
+//			param_deviceProjectorTemparature = ofToString(get_deviceProjectorTemperature()) +  " [deg]";
+//			param_deviceAsicTemparature = ofToString(get_deviceProjectorTemperature()) + " [deg]";
 
 			return true;
 		}
@@ -668,8 +679,11 @@ namespace ofxRSSDK
 			if (rs2DepthSensor.supports(RS2_OPTION_LASER_POWER))
 			{
 				// Query min and max values:
+                
 				auto range = rs2DepthSensor.get_option_range(RS2_OPTION_LASER_POWER);
-				rs2DepthSensor.set_option(RS2_OPTION_LASER_POWER, range.max * magnitude); // Set max power
+                float amount = range.max * magnitude;
+                cout<<range.min<<" "<<range.max<<" "<<magnitude<<" "<<amount<<endl;
+				rs2DepthSensor.set_option(RS2_OPTION_LASER_POWER, amount); // Set max power
 			}
 		}
 	}
