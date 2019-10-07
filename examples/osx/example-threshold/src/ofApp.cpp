@@ -50,7 +50,7 @@ void ofApp::setup()
 //--------------------------------------------------------------
 void ofApp::update()
 {
-	if (realSense->update(0)) {
+	if (realSense->update()) {
         remove_background(realSense->mDepthFrame, clipping_threshold);
 	}
 }
@@ -82,7 +82,6 @@ void ofApp::remove_background(ofPixelsRef threshold_frame, float clipping_dist)
     float depth_scale = .001; //sets the depth to be in meters
     for (int y=0; y<realSense->getDepthHeight(); y++ ){
         for (int x=0; x<realSense->getDepthWidth(); x++ ){
-            glm::vec2 col = glm::vec2(x, y);
             float distance = depth_scale * depth_frame[x+y*realSense->getDepthWidth()];
             if (distance>clipping_dist){
                 threshold_frame.setColor(x, y, ofColor(0));

@@ -64,26 +64,6 @@ namespace ofxRSSDK
 		HD1080
 	};
 
-	enum AlignMode
-	{
-		ALIGN_FRAME,
-		ALIGN_UVS_ONLY
-	};
-
-	enum CloudRes
-	{
-		FULL_RES=1,
-		HALF_RES=2,
-		Q_RES=4
-	};
-
-	enum PointCloud
-	{
-		DEPTH = 0,
-		VIDEO = 1,
-		INFRALEFT = 2
-	};
-
 	enum CaptureMode
 	{
 		Capture = 0,
@@ -121,8 +101,6 @@ namespace ofxRSSDK
 
 		void hardwareReset();
 
-		void setPointCloudRange(float pMin, float pMax);
-
 		/**
 		Starts the device with these parameters
 		@param _captureMode CaptureMode::xxx capture mode
@@ -155,15 +133,10 @@ namespace ofxRSSDK
 		*/
 		bool playback();
 
-		/**
-		update point cloud. 
-		@param color choose texture to update with
-		*/
-		bool update(int color); 
+		bool update();
 
 		bool stop();
 
-		bool draw();
 		bool drawVideoStream(const ofRectangle & rect); // draw the video stream
 		bool drawDepthStream(const ofRectangle & rect); // draw the false color depth stream
 		bool drawInfraLeftStream(const ofRectangle & rect); // draw the left infrared stream
@@ -383,9 +356,6 @@ namespace ofxRSSDK
 		const ofPixels&	getDepthFrame();
 		const ofPixels&	getInfraLeftFrame();
 
-		ofMesh getPointCloud();
-		vector<glm::vec3> & getPointCloudVertices();
-
 		//Nomenclature Notes:
 		//	"Space" denotes a 3d coordinate
 		//	"Image" denotes an image space point ((0, width), (0,height), (image depth))
@@ -412,7 +382,12 @@ namespace ofxRSSDK
 		Get the distance from the device to the specified depth coordinate
 		*/
 		float getSpaceDistanceFromDepthFrame(glm::vec2 depthCoordinate);
-
+        
+        /**
+        Set aligned
+        */
+        void enableAlignment();
+        
 		/**
 		Sets the device with these parameters
 		(424 x 240, 480 x 270, 640 x 360, 640 x 400, 640 x 480, [848 x 480], 1280 x 720, 1280 x 800)
@@ -464,6 +439,9 @@ namespace ofxRSSDK
         ofPixels		mInfraLeftFrame;
         // current Depth frame
         rs2::frame rs2Depth;
+        
+        // Set black and white, without this default is color depth map
+        void setBlackWhiteDepth();
 
 	private:
 		float get_depth_scale(rs2::device dev);
@@ -476,6 +454,7 @@ namespace ofxRSSDK
 			mIsRunning,
 			mIsCapturing,
 			mIsPlayback,
+            mAlign,
 			mIsRecording;
 		bool
 			isUsingPostProcessing,
@@ -484,11 +463,6 @@ namespace ofxRSSDK
 			isUsingFilterTemp, 
 			isUsingFilterDisparity;
 
-		AlignMode		mAlignMode;
-		CloudRes		mCloudRes;
-
-		glm::vec2			mPointCloudRange;
-
 		glm::vec2			mDepthStreamSize; // size of the depth stream after post processing (if applied)
 		glm::vec2			mVideoStreamSize;
 		glm::vec2			mInfraredStreamSize;
@@ -496,11 +470,6 @@ namespace ofxRSSDK
 
 		// Declare depth colorizer for pretty visualization of depth data
 		rs2::colorizer rs2Color_map;
-
-		// Declare pointcloud object, for calculating pointclouds and texture mappings
-		rs2::pointcloud rs2PointCloud;
-		// We want the points object to be persistent so we can display the last cloud when a frame drops
-		rs2::points rs2Points;
 
 		// Declare RealSense pipeline, encapsulating the actual device and sensors
 		std::shared_ptr<rs2::pipeline> rs2Pipe;
@@ -514,8 +483,6 @@ namespace ofxRSSDK
 		// current frame
 		rs2::frameset rs2FrameSet;
 
-		
-
 		struct rs2_intrinsics rs2DepthIntrinsics;
 		struct rs2_intrinsics rs2VideoIntrinsics;
 		struct rs2_intrinsics rsInfraLeftIntrinsics;
@@ -528,9 +495,11 @@ namespace ofxRSSDK
 		rs2::disparity_transform rs2Filter_DispIn;
 		rs2::disparity_transform rs2Filter_DispOut;
 
-		ofMesh mPointCloud;
-
 		uint16_t				*mRawDepth;
+        rs2_stream align_to;
+        rs2_stream find_stream_to_align(const std::vector<rs2::stream_profile>& streams);
+        bool profile_changed(const std::vector<rs2::stream_profile>& current, const std::vector<rs2::stream_profile>& prev);
+        
 	};
 };
 #endif
