@@ -306,8 +306,7 @@ namespace ofxRSSDK
 		// polling for the next frame
 		if (rs2Pipe->poll_for_frames(&rs2FrameSet))
 		{
-            //safe guard fo use during alignment
-            //set false each time not safe to proceed
+            //safe guard for use during alignment
             bool proceed=true;
             
             // if there is a frame...
@@ -321,7 +320,7 @@ namespace ofxRSSDK
                 rs2::align align(align_to);
                 auto processed = align.process(rs2FrameSet);
                 if (processed.size()==2){
-                    rs2::video_frame other_frame = processed.first(align_to);
+//                    rs2::video_frame other_frame = processed.first(align_to);
                     // aligned depth image
                     rs2Depth = processed.get_depth_frame();
                 } else {
