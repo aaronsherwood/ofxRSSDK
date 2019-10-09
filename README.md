@@ -46,6 +46,7 @@ I've included an Xcode example that should be ready to use. But when building a 
 ![](https://raw.githubusercontent.com/aaronsherwood/ofxRSSDK/master/images/copyfiles.png)
 * Select Editor > Add Build Phase > Add Run Script Build Phase:
 ![](https://raw.githubusercontent.com/aaronsherwood/ofxRSSDK/master/images/addrunscriptphase.png)
+
 * Find the empty Run Script you just created:
 ![](https://raw.githubusercontent.com/aaronsherwood/ofxRSSDK/master/images/addscript.png)
 * Copy and paste the following script into the box:
