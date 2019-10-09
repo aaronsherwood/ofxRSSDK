@@ -42,7 +42,14 @@ Drop this repository into the \<openframeworksfolder>/addons/ folder
 I've included an Xcode example that should be ready to use. But when building a new example:
 * Drag the osx folder containing the three .dylib files in libs/lib into the project. Select Copy Items if Needed & Add to Targets. After added it should look like:  
 ![](https://raw.githubusercontent.com/aaronsherwood/ofxRSSDK/master/images/lookslike.png)
-* In Build Settings add `../osx` to the Runpath Search Paths (you can search by `rpath` for this)
+* In Build Phases drag and drop the three .dylib files over from the left side of xCode into Copy Files:
+![](https://raw.githubusercontent.com/aaronsherwood/ofxRSSDK/master/images/copyfiles.png)
+* Select Editor > Add Build Phase > Add Run Script Build Phase:
+![](https://raw.githubusercontent.com/aaronsherwood/ofxRSSDK/master/images/addrunscriptphase.png)
+* Find the empty Run Script you just created:
+![](https://raw.githubusercontent.com/aaronsherwood/ofxRSSDK/master/images/addscript.png)
+* Copy and paste the following script into the box:
+`install_name_tool -change @rpath/librealsense2.2.dylib @executable_path/../Frameworks/librealsense2.2.dylib "$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/MacOS/$PRODUCT_NAME";`
 
 #### Visual Studio
 * Copy the realsense2.dll & realsense2.lib files found in libs/lib/windows folder to the bin folder for the project
