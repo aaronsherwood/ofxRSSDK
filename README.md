@@ -59,18 +59,10 @@ I've included an Xcode example that should be ready to use. But when building a 
 * Under Linker > General > Additional Library Directories > (Edit...) add a new entry by typing in `.\bin`
 * Under Input > Additional Dependencies > (Edit...) add a new entry by typing in `realsense2.lib`
 
-##### Old Stuff (might be useful)
-Examples have a relative path to the RealSenseSDK 2.19.1 inside the ofxRSSDK/libs folder.
-
-if otherwise, change the following:
-
-* Menu > Project > Properties > C/C++ > General > Additional Include directories > (Edit...) > (RSSKD_Dir)\include
-* Menu > Project > Properties > Linker > General > Additional Library directories > (Edit...) > (RSSKD_Dir)\lib\x64
-
 ## credits
 
 Aaron Sherwood
 
 this addon is based on https://github.com/tecartlab/ofxRSSDK & https://github.com/SethGibson/ofxRSSDK, however it has been heavily altered on order to make it compatible with the current RSSDK.
 
-contains the relevant libraries/includes from Intel® RealSense™ SDK 2.0 (build 2.20.1) https://github.com/IntelRealSense/librealsense
+contains the relevant libraries/includes from Intel® RealSense™ SDK 2.0 (build 2.2.16.2) https://github.com/IntelRealSense/librealsense
