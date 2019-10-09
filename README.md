@@ -45,8 +45,7 @@ I've included an Xcode example that should be ready to use. But when building a 
 * In Build Phases drag and drop the three .dylib files over from the left side of xCode into Copy Files:
 ![](https://raw.githubusercontent.com/aaronsherwood/ofxRSSDK/master/images/copyfiles.png)
 * Select Editor > Add Build Phase > Add Run Script Build Phase:
-![](https://raw.githubusercontent.com/aaronsherwood/ofxRSSDK/master/images/addrunscriptphase.png)
-
+![](https://raw.githubusercontent.com/aaronsherwood/ofxRSSDK/master/images/runscriptphase.png)
 * Find the empty Run Script you just created:
 ![](https://raw.githubusercontent.com/aaronsherwood/ofxRSSDK/master/images/addscript.png)
 * Copy and paste the following script into the box:
