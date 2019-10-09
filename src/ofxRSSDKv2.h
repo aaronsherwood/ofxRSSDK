@@ -442,6 +442,7 @@ namespace ofxRSSDK
         
         // Set black and white, without this default is color depth map
         void setBlackWhiteDepth();
+        bool mAlign;
 
 	private:
 		float get_depth_scale(rs2::device dev);
@@ -454,7 +455,6 @@ namespace ofxRSSDK
 			mIsRunning,
 			mIsCapturing,
 			mIsPlayback,
-            mAlign,
 			mIsRecording;
 		bool
 			isUsingPostProcessing,

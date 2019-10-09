@@ -188,12 +188,12 @@ namespace ofxRSSDK
 			cfg.enable_stream(RS2_STREAM_COLOR, videoWidth, videoHeight, RS2_FORMAT_RGB8, 30);
 			cfg.enable_stream(RS2_STREAM_INFRARED, 1);
 
-			if (mIsPlayback) {
-				cfg.enable_device_from_file(param_recordingPath.get());
-			}else if (mIsRecording) {
-				cfg.enable_record_to_file(param_recordingPath.get());
-			}
-				
+//			if (mIsPlayback) {
+//				cfg.enable_device_from_file(param_recordingPath.get());
+//			}else if (mIsRecording) {
+//				cfg.enable_record_to_file(param_recordingPath.get());
+//			}
+//				
 			rs2PipeLineProfile = rs2Pipe->start(cfg);
             
             align_to = find_stream_to_align(rs2PipeLineProfile.get_streams());
@@ -319,7 +319,8 @@ namespace ofxRSSDK
                 }
                 rs2::align align(align_to);
                 auto processed = align.process(rs2FrameSet);
-                if (processed.size()==2){
+                
+                if (processed.size()==3){
 //                    rs2::video_frame other_frame = processed.first(align_to);
                     // aligned depth image
                     rs2Depth = processed.get_depth_frame();

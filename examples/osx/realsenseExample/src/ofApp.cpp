@@ -16,7 +16,7 @@ void ofApp::setup(){
     realSense->capture();
     realSense->printDeviceInfo();
     realSense->setBlackWhiteDepth();
-    realSense->enableAlignment(); //aligns depth image with RGB image, will slow framerate down slightly
+    // realSense->enableAlignment(); //aligns depth image with RGB image, will slow framerate down slightly
     
     // opencv images init
     colorImg.allocate(w, h);
@@ -44,7 +44,7 @@ void ofApp::setup(){
 void ofApp::update(){
     ofBackground(100, 100, 100);
     // update and if there is a new frame
-    if (realSense->update() && !bDrawPointCloud) {
+    if (realSense->update() && !bDrawPointCloud ) {
         // load grayscale depth image from the realsense source
         ofPixels pix;
         pix = realSense->getDepthFrame();
@@ -156,6 +156,7 @@ void ofApp::keyPressed(int key){
             easyCam.setNearClip(0.01);
             easyCam.setDistance(1);
             bDrawPointCloud = !bDrawPointCloud;
+            realSense->mAlign = !realSense->mAlign;
             break;
             
         case '>':
@@ -179,6 +180,9 @@ void ofApp::keyPressed(int key){
         case '-':
             nearThreshold --;
             if (nearThreshold < 0) nearThreshold = 0;
+            break;
+        case 'a':
+            realSense->mAlign = !realSense->mAlign;
             break;
     }
 }
