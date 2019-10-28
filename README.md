@@ -39,7 +39,7 @@ Untested:
 Drop this repository into the \<openframeworksfolder>/addons/ folder
 
 #### Xcode
-I've included an Xcode example that should be ready to use. But when building a new example:
+There are two Xcode examples that should be ready to use. But when building a new project:
 * Drag the osx folder containing the three .dylib files in libs/lib into the project. Select Copy Items if Needed & Add to Targets. After added it should look like:  
 ![](https://raw.githubusercontent.com/aaronsherwood/ofxRSSDK/master/images/lookslike.png)
 * In Build Phases drag and drop the three .dylib files over from the left side of xCode into Copy Files:
@@ -53,6 +53,8 @@ I've included an Xcode example that should be ready to use. But when building a 
 `install_name_tool -change @rpath/librealsense2.2.dylib @executable_path/../Frameworks/librealsense2.2.dylib "$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/MacOS/$PRODUCT_NAME";`
 
 #### Visual Studio
+There are also two windows examples ready to use. Just set the configuration to x64.
+When building a new project:
 * Make sure x64 is selected in Visual Studio
 * Copy the realsense2.dll & realsense2.lib files found in libs/lib/windows folder to the bin folder for the project
 * Click on the project in Visual Studio
