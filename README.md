@@ -32,6 +32,7 @@ Untested:
 
 * Openframeworks release 0.10.x [download page](http://openframeworks.cc/download).
 * Openframeworks addon [ofxGuiExtended](https://github.com/maybites/ofxGuiExtended)
+* Openframeworks addon [ofxCv](https://github.com/kylemcdonald/ofxCv)
 
 ### Instructions
 
@@ -52,7 +53,7 @@ I've included an Xcode example that should be ready to use. But when building a 
 `install_name_tool -change @rpath/librealsense2.2.dylib @executable_path/../Frameworks/librealsense2.2.dylib "$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/MacOS/$PRODUCT_NAME";`
 
 #### Visual Studio
-* Install [realsense2 drivers](https://github.com/IntelRealSense/librealsense/releases/download/v2.16.2/Intel.RealSense.SDK-2.16.2.304.exe) (this may not be necessary, need to check) 
+* Make sure x64 is selected in Visual Studio
 * Copy the realsense2.dll & realsense2.lib files found in libs/lib/windows folder to the bin folder for the project
 * Click on the project in Visual Studio
 * Click Properties (the wrench)
