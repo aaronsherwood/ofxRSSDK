@@ -1,5 +1,4 @@
 # RealSense SDK addon for openframeworks 0.10.x
-## Under Construction
 
 Currently supported:
 * RGB Streaming
@@ -53,6 +52,7 @@ I've included an Xcode example that should be ready to use. But when building a 
 `install_name_tool -change @rpath/librealsense2.2.dylib @executable_path/../Frameworks/librealsense2.2.dylib "$TARGET_BUILD_DIR/$PRODUCT_NAME.app/Contents/MacOS/$PRODUCT_NAME";`
 
 #### Visual Studio
+* Install [realsense2 drivers](https://github.com/IntelRealSense/librealsense/releases/download/v2.16.2/Intel.RealSense.SDK-2.16.2.304.exe) (this may not be necessary, need to check) 
 * Copy the realsense2.dll & realsense2.lib files found in libs/lib/windows folder to the bin folder for the project
 * Click on the project in Visual Studio
 * Click Properties (the wrench)
