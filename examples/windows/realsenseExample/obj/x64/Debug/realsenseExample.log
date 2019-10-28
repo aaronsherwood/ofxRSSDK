@@ -1,0 +1,13 @@
+﻿     Creating library bin\realsenseExample_debug.lib and object bin\realsenseExample_debug.exp
+  realsenseExample.vcxproj -> C:\Users\nyuad\Documents\of_v0.10.1_vs2017_release\addons\ofxRSSDK\examples\windows\realsenseExample\bin\realsenseExample_debug.exe
+  
+  	                   2	C:\Users\nyuad\Documents\of_v0.10.1_vs2017_release\libs\fmodex\lib\vs\x64\
+  	  *EXTRA File 		18875472	C:\Users\nyuad\Documents\of_v0.10.1_vs2017_release\addons\ofxRSSDK\examples\windows\realsenseExample\bin\realsense2.dll
+  	    New File  		 1503232	C:\Users\nyuad\Documents\of_v0.10.1_vs2017_release\libs\fmodex\lib\vs\x64\fmodex64.dll
+  	    New File  		 1552384	C:\Users\nyuad\Documents\of_v0.10.1_vs2017_release\libs\fmodex\lib\vs\x64\fmodexL64.dll
+  
+  	                   1	C:\Users\nyuad\Documents\of_v0.10.1_vs2017_release\libs\FreeImage\lib\vs\x64\
+  	  *EXTRA File 		 1503232	C:\Users\nyuad\Documents\of_v0.10.1_vs2017_release\addons\ofxRSSDK\examples\windows\realsenseExample\bin\fmodex64.dll
+  	  *EXTRA File 		 1552384	C:\Users\nyuad\Documents\of_v0.10.1_vs2017_release\addons\ofxRSSDK\examples\windows\realsenseExample\bin\fmodexL64.dll
+  	  *EXTRA File 		18875472	C:\Users\nyuad\Documents\of_v0.10.1_vs2017_release\addons\ofxRSSDK\examples\windows\realsenseExample\bin\realsense2.dll
+  	    New File  		 6942208	C:\Users\nyuad\Documents\of_v0.10.1_vs2017_release\libs\FreeImage\lib\vs\x64\FreeImage.dll

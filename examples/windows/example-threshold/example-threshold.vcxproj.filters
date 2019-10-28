@@ -1,0 +1,213 @@
+<?xml version="1.0"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+	<ItemGroup>
+		<ClCompile Include="src\ofApp.cpp">
+			<Filter>src</Filter>
+		</ClCompile>
+		<ClCompile Include="src\main.cpp">
+			<Filter>src</Filter>
+		</ClCompile>
+		<ClCompile Include="src\main.cpp">
+			<Filter>src</Filter>
+		</ClCompile>
+		<ClCompile Include="src\ofApp.cpp">
+			<Filter>src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\..\..\addons\ofxGui\src\ofxBaseGui.cpp">
+			<Filter>addons\ofxGui\src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\..\..\addons\ofxGui\src\ofxButton.cpp">
+			<Filter>addons\ofxGui\src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\..\..\addons\ofxGui\src\ofxColorPicker.cpp">
+			<Filter>addons\ofxGui\src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\..\..\addons\ofxGui\src\ofxGuiGroup.cpp">
+			<Filter>addons\ofxGui\src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\..\..\addons\ofxGui\src\ofxInputField.cpp">
+			<Filter>addons\ofxGui\src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\..\..\addons\ofxGui\src\ofxLabel.cpp">
+			<Filter>addons\ofxGui\src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\..\..\addons\ofxGui\src\ofxPanel.cpp">
+			<Filter>addons\ofxGui\src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\..\..\addons\ofxGui\src\ofxSlider.cpp">
+			<Filter>addons\ofxGui\src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\..\..\addons\ofxGui\src\ofxSliderGroup.cpp">
+			<Filter>addons\ofxGui\src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\..\..\addons\ofxGui\src\ofxToggle.cpp">
+			<Filter>addons\ofxGui\src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\..\..\addons\ofxRSSDK\src\Helper.cpp">
+			<Filter>addons\ofxRSSDK\src</Filter>
+		</ClCompile>
+		<ClCompile Include="..\..\..\..\..\addons\ofxRSSDK\src\ofxRSSDKv2.cpp">
+			<Filter>addons\ofxRSSDK\src</Filter>
+		</ClCompile>
+	</ItemGroup>
+	<ItemGroup>
+		<Filter Include="src">
+			<UniqueIdentifier>{d8376475-7454-4a24-b08a-aac121d3ad6f}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons">
+			<UniqueIdentifier>{71834F65-F3A9-211E-73B8-DC85}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxGui">
+			<UniqueIdentifier>{4F2A59AF-5F4E-704B-D067-EC13}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxGui\src">
+			<UniqueIdentifier>{645E9533-4DCD-6179-1CDF-CB65}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxRSSDK">
+			<UniqueIdentifier>{89FFFBD0-AFD4-2ED0-2F75-0299}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxRSSDK\src">
+			<UniqueIdentifier>{95B5396E-9600-8196-68E3-090C}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxRSSDK\libs">
+			<UniqueIdentifier>{2F751149-9082-85E6-E00B-8068}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxRSSDK\libs\IntelRealSense_2.2.16.2">
+			<UniqueIdentifier>{D4FFDB31-B7B8-2773-6677-22BC}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxRSSDK\libs\IntelRealSense_2.2.16.2\include">
+			<UniqueIdentifier>{60722145-8363-D8F6-289E-9E09}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxRSSDK\libs\IntelRealSense_2.2.16.2\include\librealsense2">
+			<UniqueIdentifier>{21B77DBE-0268-D1AA-1296-5695}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxRSSDK\libs\IntelRealSense_2.2.16.2\include\librealsense2\h">
+			<UniqueIdentifier>{A7A40D7D-C6E0-BCD0-C61A-3325}</UniqueIdentifier>
+		</Filter>
+		<Filter Include="addons\ofxRSSDK\libs\IntelRealSense_2.2.16.2\include\librealsense2\hpp">
+			<UniqueIdentifier>{D911EC68-3224-1EBF-513A-FACE}</UniqueIdentifier>
+		</Filter>
+	</ItemGroup>
+	<ItemGroup>
+		<ClInclude Include="src\ofApp.h">
+			<Filter>src</Filter>
+		</ClInclude>
+		<ClInclude Include="src\ofApp.h">
+			<Filter>src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\..\..\addons\ofxGui\src\ofxBaseGui.h">
+			<Filter>addons\ofxGui\src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\..\..\addons\ofxGui\src\ofxButton.h">
+			<Filter>addons\ofxGui\src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\..\..\addons\ofxGui\src\ofxColorPicker.h">
+			<Filter>addons\ofxGui\src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\..\..\addons\ofxGui\src\ofxGui.h">
+			<Filter>addons\ofxGui\src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\..\..\addons\ofxGui\src\ofxGuiGroup.h">
+			<Filter>addons\ofxGui\src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\..\..\addons\ofxGui\src\ofxInputField.h">
+			<Filter>addons\ofxGui\src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\..\..\addons\ofxGui\src\ofxLabel.h">
+			<Filter>addons\ofxGui\src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\..\..\addons\ofxGui\src\ofxPanel.h">
+			<Filter>addons\ofxGui\src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\..\..\addons\ofxGui\src\ofxSlider.h">
+			<Filter>addons\ofxGui\src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\..\..\addons\ofxGui\src\ofxSliderGroup.h">
+			<Filter>addons\ofxGui\src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\..\..\addons\ofxGui\src\ofxToggle.h">
+			<Filter>addons\ofxGui\src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\..\..\addons\ofxRSSDK\src\ofxRSSDKv2.h">
+			<Filter>addons\ofxRSSDK\src</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\..\..\addons\ofxRSSDK\libs\IntelRealSense_2.2.16.2\include\librealsense2\h\rs_advanced_mode_command.h">
+			<Filter>addons\ofxRSSDK\libs\IntelRealSense_2.2.16.2\include\librealsense2\h</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\..\..\addons\ofxRSSDK\libs\IntelRealSense_2.2.16.2\include\librealsense2\h\rs_context.h">
+			<Filter>addons\ofxRSSDK\libs\IntelRealSense_2.2.16.2\include\librealsense2\h</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\..\..\addons\ofxRSSDK\libs\IntelRealSense_2.2.16.2\include\librealsense2\h\rs_device.h">
+			<Filter>addons\ofxRSSDK\libs\IntelRealSense_2.2.16.2\include\librealsense2\h</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\..\..\addons\ofxRSSDK\libs\IntelRealSense_2.2.16.2\include\librealsense2\h\rs_frame.h">
+			<Filter>addons\ofxRSSDK\libs\IntelRealSense_2.2.16.2\include\librealsense2\h</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\..\..\addons\ofxRSSDK\libs\IntelRealSense_2.2.16.2\include\librealsense2\h\rs_internal.h">
+			<Filter>addons\ofxRSSDK\libs\IntelRealSense_2.2.16.2\include\librealsense2\h</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\..\..\addons\ofxRSSDK\libs\IntelRealSense_2.2.16.2\include\librealsense2\h\rs_option.h">
+			<Filter>addons\ofxRSSDK\libs\IntelRealSense_2.2.16.2\include\librealsense2\h</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\..\..\addons\ofxRSSDK\libs\IntelRealSense_2.2.16.2\include\librealsense2\h\rs_pipeline.h">
+			<Filter>addons\ofxRSSDK\libs\IntelRealSense_2.2.16.2\include\librealsense2\h</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\..\..\addons\ofxRSSDK\libs\IntelRealSense_2.2.16.2\include\librealsense2\h\rs_processing.h">
+			<Filter>addons\ofxRSSDK\libs\IntelRealSense_2.2.16.2\include\librealsense2\h</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\..\..\addons\ofxRSSDK\libs\IntelRealSense_2.2.16.2\include\librealsense2\h\rs_record_playback.h">
+			<Filter>addons\ofxRSSDK\libs\IntelRealSense_2.2.16.2\include\librealsense2\h</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\..\..\addons\ofxRSSDK\libs\IntelRealSense_2.2.16.2\include\librealsense2\h\rs_sensor.h">
+			<Filter>addons\ofxRSSDK\libs\IntelRealSense_2.2.16.2\include\librealsense2\h</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\..\..\addons\ofxRSSDK\libs\IntelRealSense_2.2.16.2\include\librealsense2\h\rs_types.h">
+			<Filter>addons\ofxRSSDK\libs\IntelRealSense_2.2.16.2\include\librealsense2\h</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\..\..\addons\ofxRSSDK\libs\IntelRealSense_2.2.16.2\include\librealsense2\hpp\rs_context.hpp">
+			<Filter>addons\ofxRSSDK\libs\IntelRealSense_2.2.16.2\include\librealsense2\hpp</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\..\..\addons\ofxRSSDK\libs\IntelRealSense_2.2.16.2\include\librealsense2\hpp\rs_device.hpp">
+			<Filter>addons\ofxRSSDK\libs\IntelRealSense_2.2.16.2\include\librealsense2\hpp</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\..\..\addons\ofxRSSDK\libs\IntelRealSense_2.2.16.2\include\librealsense2\hpp\rs_frame.hpp">
+			<Filter>addons\ofxRSSDK\libs\IntelRealSense_2.2.16.2\include\librealsense2\hpp</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\..\..\addons\ofxRSSDK\libs\IntelRealSense_2.2.16.2\include\librealsense2\hpp\rs_internal.hpp">
+			<Filter>addons\ofxRSSDK\libs\IntelRealSense_2.2.16.2\include\librealsense2\hpp</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\..\..\addons\ofxRSSDK\libs\IntelRealSense_2.2.16.2\include\librealsense2\hpp\rs_pipeline.hpp">
+			<Filter>addons\ofxRSSDK\libs\IntelRealSense_2.2.16.2\include\librealsense2\hpp</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\..\..\addons\ofxRSSDK\libs\IntelRealSense_2.2.16.2\include\librealsense2\hpp\rs_processing.hpp">
+			<Filter>addons\ofxRSSDK\libs\IntelRealSense_2.2.16.2\include\librealsense2\hpp</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\..\..\addons\ofxRSSDK\libs\IntelRealSense_2.2.16.2\include\librealsense2\hpp\rs_record_playback.hpp">
+			<Filter>addons\ofxRSSDK\libs\IntelRealSense_2.2.16.2\include\librealsense2\hpp</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\..\..\addons\ofxRSSDK\libs\IntelRealSense_2.2.16.2\include\librealsense2\hpp\rs_sensor.hpp">
+			<Filter>addons\ofxRSSDK\libs\IntelRealSense_2.2.16.2\include\librealsense2\hpp</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\..\..\addons\ofxRSSDK\libs\IntelRealSense_2.2.16.2\include\librealsense2\hpp\rs_types.hpp">
+			<Filter>addons\ofxRSSDK\libs\IntelRealSense_2.2.16.2\include\librealsense2\hpp</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\..\..\addons\ofxRSSDK\libs\IntelRealSense_2.2.16.2\include\librealsense2\rs.h">
+			<Filter>addons\ofxRSSDK\libs\IntelRealSense_2.2.16.2\include\librealsense2</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\..\..\addons\ofxRSSDK\libs\IntelRealSense_2.2.16.2\include\librealsense2\rs.hpp">
+			<Filter>addons\ofxRSSDK\libs\IntelRealSense_2.2.16.2\include\librealsense2</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\..\..\addons\ofxRSSDK\libs\IntelRealSense_2.2.16.2\include\librealsense2\rsutil.h">
+			<Filter>addons\ofxRSSDK\libs\IntelRealSense_2.2.16.2\include\librealsense2</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\..\..\addons\ofxRSSDK\libs\IntelRealSense_2.2.16.2\include\librealsense2\rs_advanced_mode.h">
+			<Filter>addons\ofxRSSDK\libs\IntelRealSense_2.2.16.2\include\librealsense2</Filter>
+		</ClInclude>
+		<ClInclude Include="..\..\..\..\..\addons\ofxRSSDK\libs\IntelRealSense_2.2.16.2\include\librealsense2\rs_advanced_mode.hpp">
+			<Filter>addons\ofxRSSDK\libs\IntelRealSense_2.2.16.2\include\librealsense2</Filter>
+		</ClInclude>
+	</ItemGroup>
+	<ItemGroup>
+		<ResourceCompile Include="icon.rc" />
+	</ItemGroup>
+</Project>

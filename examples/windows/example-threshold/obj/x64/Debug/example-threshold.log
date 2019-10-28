@@ -1,0 +1,205 @@
+﻿  main.cpp
+  ofApp.cpp
+  ofxBaseGui.cpp
+  ofxButton.cpp
+  ofxColorPicker.cpp
+  ofxGuiGroup.cpp
+  ofxInputField.cpp
+  ofxLabel.cpp
+c:\users\nyuad\documents\of_v0.10.1_vs2017_release\libs\openframeworks\math\ofmatrix4x4.h(326): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file ..\..\..\..\..\addons\ofxGui\src\ofxInputField.cpp)
+c:\users\nyuad\documents\of_v0.10.1_vs2017_release\libs\openframeworks\math\ofmatrix4x4.h(331): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file ..\..\..\..\..\addons\ofxGui\src\ofxInputField.cpp)
+c:\users\nyuad\documents\of_v0.10.1_vs2017_release\libs\openframeworks\math\ofmatrix4x4.h(326): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file ..\..\..\..\..\addons\ofxGui\src\ofxGuiGroup.cpp)
+c:\users\nyuad\documents\of_v0.10.1_vs2017_release\libs\openframeworks\math\ofmatrix4x4.h(331): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file ..\..\..\..\..\addons\ofxGui\src\ofxGuiGroup.cpp)
+c:\users\nyuad\documents\of_v0.10.1_vs2017_release\libs\openframeworks\math\ofmatrix4x4.h(912): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file ..\..\..\..\..\addons\ofxGui\src\ofxInputField.cpp)
+c:\users\nyuad\documents\of_v0.10.1_vs2017_release\libs\openframeworks\math\ofmatrix4x4.h(913): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file ..\..\..\..\..\addons\ofxGui\src\ofxInputField.cpp)
+c:\users\nyuad\documents\of_v0.10.1_vs2017_release\libs\openframeworks\math\ofmatrix4x4.h(914): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file ..\..\..\..\..\addons\ofxGui\src\ofxInputField.cpp)
+c:\users\nyuad\documents\of_v0.10.1_vs2017_release\libs\openframeworks\math\ofmatrix4x4.h(915): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file ..\..\..\..\..\addons\ofxGui\src\ofxInputField.cpp)
+c:\users\nyuad\documents\of_v0.10.1_vs2017_release\libs\openframeworks\math\ofmatrix4x4.h(326): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file ..\..\..\..\..\addons\ofxGui\src\ofxBaseGui.cpp)
+c:\users\nyuad\documents\of_v0.10.1_vs2017_release\libs\openframeworks\math\ofmatrix4x4.h(331): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file ..\..\..\..\..\addons\ofxGui\src\ofxBaseGui.cpp)
+c:\users\nyuad\documents\of_v0.10.1_vs2017_release\libs\openframeworks\math\ofmatrix4x4.h(912): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file ..\..\..\..\..\addons\ofxGui\src\ofxGuiGroup.cpp)
+c:\users\nyuad\documents\of_v0.10.1_vs2017_release\libs\openframeworks\math\ofmatrix4x4.h(913): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file ..\..\..\..\..\addons\ofxGui\src\ofxGuiGroup.cpp)
+c:\users\nyuad\documents\of_v0.10.1_vs2017_release\libs\openframeworks\math\ofmatrix4x4.h(914): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file ..\..\..\..\..\addons\ofxGui\src\ofxGuiGroup.cpp)
+c:\users\nyuad\documents\of_v0.10.1_vs2017_release\libs\openframeworks\math\ofmatrix4x4.h(915): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file ..\..\..\..\..\addons\ofxGui\src\ofxGuiGroup.cpp)
+c:\users\nyuad\documents\of_v0.10.1_vs2017_release\libs\openframeworks\math\ofmatrix4x4.h(912): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file ..\..\..\..\..\addons\ofxGui\src\ofxBaseGui.cpp)
+c:\users\nyuad\documents\of_v0.10.1_vs2017_release\libs\openframeworks\math\ofmatrix4x4.h(913): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file ..\..\..\..\..\addons\ofxGui\src\ofxBaseGui.cpp)
+c:\users\nyuad\documents\of_v0.10.1_vs2017_release\libs\openframeworks\math\ofmatrix4x4.h(914): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file ..\..\..\..\..\addons\ofxGui\src\ofxBaseGui.cpp)
+c:\users\nyuad\documents\of_v0.10.1_vs2017_release\libs\openframeworks\math\ofmatrix4x4.h(915): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file ..\..\..\..\..\addons\ofxGui\src\ofxBaseGui.cpp)
+c:\users\nyuad\documents\of_v0.10.1_vs2017_release\libs\openframeworks\math\ofmatrix4x4.h(326): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file ..\..\..\..\..\addons\ofxGui\src\ofxButton.cpp)
+c:\users\nyuad\documents\of_v0.10.1_vs2017_release\libs\openframeworks\math\ofmatrix4x4.h(331): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file ..\..\..\..\..\addons\ofxGui\src\ofxButton.cpp)
+c:\users\nyuad\documents\of_v0.10.1_vs2017_release\libs\openframeworks\math\ofmatrix4x4.h(912): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file ..\..\..\..\..\addons\ofxGui\src\ofxButton.cpp)
+c:\users\nyuad\documents\of_v0.10.1_vs2017_release\libs\openframeworks\math\ofmatrix4x4.h(913): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file ..\..\..\..\..\addons\ofxGui\src\ofxButton.cpp)
+c:\users\nyuad\documents\of_v0.10.1_vs2017_release\libs\openframeworks\math\ofmatrix4x4.h(914): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file ..\..\..\..\..\addons\ofxGui\src\ofxButton.cpp)
+c:\users\nyuad\documents\of_v0.10.1_vs2017_release\libs\openframeworks\math\ofmatrix4x4.h(915): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file ..\..\..\..\..\addons\ofxGui\src\ofxButton.cpp)
+c:\users\nyuad\documents\of_v0.10.1_vs2017_release\libs\openframeworks\math\ofmatrix4x4.h(326): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file ..\..\..\..\..\addons\ofxGui\src\ofxLabel.cpp)
+c:\users\nyuad\documents\of_v0.10.1_vs2017_release\libs\openframeworks\math\ofmatrix4x4.h(331): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file ..\..\..\..\..\addons\ofxGui\src\ofxLabel.cpp)
+c:\users\nyuad\documents\of_v0.10.1_vs2017_release\libs\openframeworks\math\ofmatrix4x4.h(326): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file ..\..\..\..\..\addons\ofxGui\src\ofxColorPicker.cpp)
+c:\users\nyuad\documents\of_v0.10.1_vs2017_release\libs\openframeworks\math\ofmatrix4x4.h(331): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file ..\..\..\..\..\addons\ofxGui\src\ofxColorPicker.cpp)
+c:\users\nyuad\documents\of_v0.10.1_vs2017_release\libs\openframeworks\math\ofmatrix4x4.h(912): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file ..\..\..\..\..\addons\ofxGui\src\ofxLabel.cpp)
+c:\users\nyuad\documents\of_v0.10.1_vs2017_release\libs\openframeworks\math\ofmatrix4x4.h(913): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file ..\..\..\..\..\addons\ofxGui\src\ofxLabel.cpp)
+c:\users\nyuad\documents\of_v0.10.1_vs2017_release\libs\openframeworks\math\ofmatrix4x4.h(914): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file ..\..\..\..\..\addons\ofxGui\src\ofxLabel.cpp)
+c:\users\nyuad\documents\of_v0.10.1_vs2017_release\libs\openframeworks\math\ofmatrix4x4.h(915): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file ..\..\..\..\..\addons\ofxGui\src\ofxLabel.cpp)
+c:\users\nyuad\documents\of_v0.10.1_vs2017_release\libs\openframeworks\math\ofmatrix4x4.h(912): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file ..\..\..\..\..\addons\ofxGui\src\ofxColorPicker.cpp)
+c:\users\nyuad\documents\of_v0.10.1_vs2017_release\libs\openframeworks\math\ofmatrix4x4.h(913): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file ..\..\..\..\..\addons\ofxGui\src\ofxColorPicker.cpp)
+c:\users\nyuad\documents\of_v0.10.1_vs2017_release\libs\openframeworks\math\ofmatrix4x4.h(914): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file ..\..\..\..\..\addons\ofxGui\src\ofxColorPicker.cpp)
+c:\users\nyuad\documents\of_v0.10.1_vs2017_release\libs\openframeworks\math\ofmatrix4x4.h(915): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file ..\..\..\..\..\addons\ofxGui\src\ofxColorPicker.cpp)
+c:\users\nyuad\documents\of_v0.10.1_vs2017_release\libs\openframeworks\math\ofmatrix4x4.h(326): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file src\ofApp.cpp)
+c:\users\nyuad\documents\of_v0.10.1_vs2017_release\libs\openframeworks\math\ofmatrix4x4.h(331): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file src\ofApp.cpp)
+c:\users\nyuad\documents\of_v0.10.1_vs2017_release\libs\openframeworks\math\ofmatrix4x4.h(912): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file src\ofApp.cpp)
+c:\users\nyuad\documents\of_v0.10.1_vs2017_release\libs\openframeworks\math\ofmatrix4x4.h(913): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file src\ofApp.cpp)
+c:\users\nyuad\documents\of_v0.10.1_vs2017_release\libs\openframeworks\math\ofmatrix4x4.h(914): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file src\ofApp.cpp)
+c:\users\nyuad\documents\of_v0.10.1_vs2017_release\libs\openframeworks\math\ofmatrix4x4.h(915): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file src\ofApp.cpp)
+c:\users\nyuad\documents\of_v0.10.1_vs2017_release\libs\openframeworks\math\ofmatrix4x4.h(326): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file src\main.cpp)
+c:\users\nyuad\documents\of_v0.10.1_vs2017_release\libs\openframeworks\math\ofmatrix4x4.h(331): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file src\main.cpp)
+c:\users\nyuad\documents\of_v0.10.1_vs2017_release\libs\openframeworks\math\ofmatrix4x4.h(912): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file src\main.cpp)
+c:\users\nyuad\documents\of_v0.10.1_vs2017_release\libs\openframeworks\math\ofmatrix4x4.h(913): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file src\main.cpp)
+c:\users\nyuad\documents\of_v0.10.1_vs2017_release\libs\openframeworks\math\ofmatrix4x4.h(914): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file src\main.cpp)
+c:\users\nyuad\documents\of_v0.10.1_vs2017_release\libs\openframeworks\math\ofmatrix4x4.h(915): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file src\main.cpp)
+c:\users\nyuad\documents\of_v0.10.1_vs2017_release\addons\ofxgui\src\ofxcolorpicker.cpp(215): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  c:\users\nyuad\documents\of_v0.10.1_vs2017_release\addons\ofxgui\src\ofxcolorpicker.cpp(194): note: while compiling class template member function 'ofMesh ofxColorPicker_<unsigned char>::getColorPoint(void)'
+  c:\users\nyuad\documents\of_v0.10.1_vs2017_release\addons\ofxgui\src\ofxcolorpicker.cpp(485): note: see reference to function template instantiation 'ofMesh ofxColorPicker_<unsigned char>::getColorPoint(void)' being compiled
+  c:\users\nyuad\documents\of_v0.10.1_vs2017_release\addons\ofxgui\src\ofxcolorpicker.cpp(490): note: see reference to class template instantiation 'ofxColorPicker_<unsigned char>' being compiled
+c:\users\nyuad\documents\of_v0.10.1_vs2017_release\addons\ofxgui\src\ofxcolorpicker.cpp(216): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+c:\users\nyuad\documents\of_v0.10.1_vs2017_release\addons\ofxgui\src\ofxcolorpicker.cpp(225): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+c:\users\nyuad\documents\of_v0.10.1_vs2017_release\addons\ofxgui\src\ofxcolorpicker.cpp(226): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+c:\users\nyuad\documents\of_v0.10.1_vs2017_release\addons\ofxgui\src\ofxcolorpicker.cpp(245): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  c:\users\nyuad\documents\of_v0.10.1_vs2017_release\addons\ofxgui\src\ofxcolorpicker.cpp(236): note: while compiling class template member function 'ofMesh ofxColorPicker_<unsigned char>::getColorWheel(void)'
+  c:\users\nyuad\documents\of_v0.10.1_vs2017_release\addons\ofxgui\src\ofxcolorpicker.cpp(484): note: see reference to function template instantiation 'ofMesh ofxColorPicker_<unsigned char>::getColorWheel(void)' being compiled
+c:\users\nyuad\documents\of_v0.10.1_vs2017_release\addons\ofxgui\src\ofxcolorpicker.cpp(246): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+c:\users\nyuad\documents\of_v0.10.1_vs2017_release\addons\ofxgui\src\ofxinputfield.cpp(370): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  c:\users\nyuad\documents\of_v0.10.1_vs2017_release\addons\ofxgui\src\ofxinputfield.cpp(352): note: while compiling class template member function 'bool ofxInputField<float>::mousePressed(ofMouseEventArgs &)'
+  c:\users\nyuad\documents\of_v0.10.1_vs2017_release\addons\ofxgui\src\ofxinputfield.cpp(804): note: see reference to class template instantiation 'ofxInputField<float>' being compiled
+c:\users\nyuad\documents\of_v0.10.1_vs2017_release\addons\ofxgui\src\ofxinputfield.cpp(531): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  c:\users\nyuad\documents\of_v0.10.1_vs2017_release\addons\ofxgui\src\ofxinputfield.cpp(472): note: while compiling class template member function 'bool ofxInputField<float>::keyPressed(ofKeyEventArgs &)'
+c:\users\nyuad\documents\of_v0.10.1_vs2017_release\addons\ofxgui\src\ofxinputfield.cpp(558): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+c:\users\nyuad\documents\of_v0.10.1_vs2017_release\addons\ofxgui\src\ofxinputfield.cpp(560): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+c:\users\nyuad\documents\of_v0.10.1_vs2017_release\addons\ofxgui\src\ofxinputfield.cpp(775): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  c:\users\nyuad\documents\of_v0.10.1_vs2017_release\addons\ofxgui\src\ofxinputfield.cpp(772): note: while compiling class template member function 'void ofxInputField<float>::valueChanged(Type &)'
+          with
+          [
+              Type=float
+          ]
+  c:\users\nyuad\documents\of_v0.10.1_vs2017_release\addons\ofxgui\src\ofxinputfield.cpp(148): note: see reference to function template instantiation 'void ofxInputField<float>::valueChanged(Type &)' being compiled
+          with
+          [
+              Type=float
+          ]
+c:\users\nyuad\documents\of_v0.10.1_vs2017_release\libs\openframeworks\graphics\ofpolyline.inl(396): warning C4267: '=': conversion from 'size_t' to 'int', possible loss of data (compiling source file ..\..\..\..\..\addons\ofxGui\src\ofxColorPicker.cpp)
+  c:\users\nyuad\documents\of_v0.10.1_vs2017_release\libs\openframeworks\graphics\ofpolyline.inl(318): note: while compiling class template member function 'void ofPolyline_<ofDefaultVertexType>::arc(const T &,float,float,float,float,bool,int)'
+          with
+          [
+              T=ofDefaultVertexType
+          ] (compiling source file ..\..\..\..\..\addons\ofxGui\src\ofxColorPicker.cpp)
+  c:\users\nyuad\documents\of_v0.10.1_vs2017_release\addons\ofxgui\src\ofxcolorpicker.cpp(208): note: see reference to function template instantiation 'void ofPolyline_<ofDefaultVertexType>::arc(const T &,float,float,float,float,bool,int)' being compiled
+          with
+          [
+              T=ofDefaultVertexType
+          ]
+  c:\users\nyuad\documents\of_v0.10.1_vs2017_release\addons\ofxgui\src\ofxcolorpicker.cpp(194): note: while compiling class template member function 'ofMesh ofxColorPicker_<unsigned char>::getColorPoint(void)'
+  c:\users\nyuad\documents\of_v0.10.1_vs2017_release\addons\ofxgui\src\ofxcolorpicker.cpp(485): note: see reference to function template instantiation 'ofMesh ofxColorPicker_<unsigned char>::getColorPoint(void)' being compiled
+  ofxPanel.cpp
+  ofxSlider.cpp
+  ofxSliderGroup.cpp
+  ofxToggle.cpp
+c:\users\nyuad\documents\of_v0.10.1_vs2017_release\libs\openframeworks\math\ofmatrix4x4.h(326): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file ..\..\..\..\..\addons\ofxGui\src\ofxPanel.cpp)
+c:\users\nyuad\documents\of_v0.10.1_vs2017_release\libs\openframeworks\math\ofmatrix4x4.h(331): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file ..\..\..\..\..\addons\ofxGui\src\ofxPanel.cpp)
+c:\users\nyuad\documents\of_v0.10.1_vs2017_release\libs\openframeworks\math\ofmatrix4x4.h(326): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file ..\..\..\..\..\addons\ofxGui\src\ofxSlider.cpp)
+c:\users\nyuad\documents\of_v0.10.1_vs2017_release\libs\openframeworks\math\ofmatrix4x4.h(331): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file ..\..\..\..\..\addons\ofxGui\src\ofxSlider.cpp)
+c:\users\nyuad\documents\of_v0.10.1_vs2017_release\libs\openframeworks\math\ofmatrix4x4.h(912): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file ..\..\..\..\..\addons\ofxGui\src\ofxPanel.cpp)
+c:\users\nyuad\documents\of_v0.10.1_vs2017_release\libs\openframeworks\math\ofmatrix4x4.h(913): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file ..\..\..\..\..\addons\ofxGui\src\ofxPanel.cpp)
+c:\users\nyuad\documents\of_v0.10.1_vs2017_release\libs\openframeworks\math\ofmatrix4x4.h(914): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file ..\..\..\..\..\addons\ofxGui\src\ofxPanel.cpp)
+c:\users\nyuad\documents\of_v0.10.1_vs2017_release\libs\openframeworks\math\ofmatrix4x4.h(915): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file ..\..\..\..\..\addons\ofxGui\src\ofxPanel.cpp)
+c:\users\nyuad\documents\of_v0.10.1_vs2017_release\libs\openframeworks\math\ofmatrix4x4.h(912): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file ..\..\..\..\..\addons\ofxGui\src\ofxSlider.cpp)
+c:\users\nyuad\documents\of_v0.10.1_vs2017_release\libs\openframeworks\math\ofmatrix4x4.h(913): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file ..\..\..\..\..\addons\ofxGui\src\ofxSlider.cpp)
+c:\users\nyuad\documents\of_v0.10.1_vs2017_release\libs\openframeworks\math\ofmatrix4x4.h(914): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file ..\..\..\..\..\addons\ofxGui\src\ofxSlider.cpp)
+c:\users\nyuad\documents\of_v0.10.1_vs2017_release\libs\openframeworks\math\ofmatrix4x4.h(915): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file ..\..\..\..\..\addons\ofxGui\src\ofxSlider.cpp)
+  Helper.cpp
+  ofxRSSDKv2.cpp
+c:\users\nyuad\documents\of_v0.10.1_vs2017_release\libs\openframeworks\math\ofmatrix4x4.h(326): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file ..\..\..\..\..\addons\ofxGui\src\ofxSliderGroup.cpp)
+c:\users\nyuad\documents\of_v0.10.1_vs2017_release\libs\openframeworks\math\ofmatrix4x4.h(331): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file ..\..\..\..\..\addons\ofxGui\src\ofxSliderGroup.cpp)
+c:\users\nyuad\documents\of_v0.10.1_vs2017_release\libs\openframeworks\math\ofmatrix4x4.h(912): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file ..\..\..\..\..\addons\ofxGui\src\ofxSliderGroup.cpp)
+c:\users\nyuad\documents\of_v0.10.1_vs2017_release\libs\openframeworks\math\ofmatrix4x4.h(913): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file ..\..\..\..\..\addons\ofxGui\src\ofxSliderGroup.cpp)
+c:\users\nyuad\documents\of_v0.10.1_vs2017_release\libs\openframeworks\math\ofmatrix4x4.h(914): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file ..\..\..\..\..\addons\ofxGui\src\ofxSliderGroup.cpp)
+c:\users\nyuad\documents\of_v0.10.1_vs2017_release\libs\openframeworks\math\ofmatrix4x4.h(915): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file ..\..\..\..\..\addons\ofxGui\src\ofxSliderGroup.cpp)
+c:\users\nyuad\documents\of_v0.10.1_vs2017_release\libs\openframeworks\math\ofmatrix4x4.h(326): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file ..\..\..\..\..\addons\ofxGui\src\ofxToggle.cpp)
+c:\users\nyuad\documents\of_v0.10.1_vs2017_release\libs\openframeworks\math\ofmatrix4x4.h(331): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file ..\..\..\..\..\addons\ofxGui\src\ofxToggle.cpp)
+c:\users\nyuad\documents\of_v0.10.1_vs2017_release\libs\openframeworks\math\ofmatrix4x4.h(912): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file ..\..\..\..\..\addons\ofxGui\src\ofxToggle.cpp)
+c:\users\nyuad\documents\of_v0.10.1_vs2017_release\libs\openframeworks\math\ofmatrix4x4.h(913): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file ..\..\..\..\..\addons\ofxGui\src\ofxToggle.cpp)
+c:\users\nyuad\documents\of_v0.10.1_vs2017_release\libs\openframeworks\math\ofmatrix4x4.h(914): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file ..\..\..\..\..\addons\ofxGui\src\ofxToggle.cpp)
+c:\users\nyuad\documents\of_v0.10.1_vs2017_release\libs\openframeworks\math\ofmatrix4x4.h(915): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file ..\..\..\..\..\addons\ofxGui\src\ofxToggle.cpp)
+c:\users\nyuad\documents\of_v0.10.1_vs2017_release\addons\ofxgui\src\ofxslidergroup.cpp(26): warning C4267: 'argument': conversion from 'size_t' to 'glm::tvec3<float,0>::length_type', possible loss of data
+  c:\users\nyuad\documents\of_v0.10.1_vs2017_release\addons\ofxgui\src\ofxslidergroup.cpp(11): note: while compiling class template member function 'ofxVecSlider_<ofDefaultVec3> *ofxVecSlider_<ofDefaultVec3>::setup(ofParameter<ofDefaultVec3>,float,float)'
+  c:\users\nyuad\documents\of_v0.10.1_vs2017_release\addons\ofxgui\src\ofxslidergroup.cpp(7): note: see reference to function template instantiation 'ofxVecSlider_<ofDefaultVec3> *ofxVecSlider_<ofDefaultVec3>::setup(ofParameter<ofDefaultVec3>,float,float)' being compiled
+  c:\users\nyuad\documents\of_v0.10.1_vs2017_release\addons\ofxgui\src\ofxslidergroup.cpp(69): note: see reference to class template instantiation 'ofxVecSlider_<ofDefaultVec3>' being compiled
+c:\users\nyuad\documents\of_v0.10.1_vs2017_release\addons\ofxgui\src\ofxslidergroup.cpp(59): warning C4267: 'argument': conversion from 'size_t' to 'glm::tvec3<float,0>::length_type', possible loss of data
+  c:\users\nyuad\documents\of_v0.10.1_vs2017_release\addons\ofxgui\src\ofxslidergroup.cpp(54): note: while compiling class template member function 'void ofxVecSlider_<ofDefaultVec3>::changeValue(VecType &)'
+          with
+          [
+              VecType=ofDefaultVec3
+          ]
+  c:\users\nyuad\documents\of_v0.10.1_vs2017_release\addons\ofxgui\src\ofxslidergroup.cpp(19): note: see reference to function template instantiation 'void ofxVecSlider_<ofDefaultVec3>::changeValue(VecType &)' being compiled
+          with
+          [
+              VecType=ofDefaultVec3
+          ]
+c:\users\nyuad\documents\of_v0.10.1_vs2017_release\addons\ofxgui\src\ofxslidergroup.cpp(26): warning C4267: 'argument': conversion from 'size_t' to 'glm::tvec2<float,0>::length_type', possible loss of data
+  c:\users\nyuad\documents\of_v0.10.1_vs2017_release\addons\ofxgui\src\ofxslidergroup.cpp(11): note: while compiling class template member function 'ofxVecSlider_<ofDefaultVec2> *ofxVecSlider_<ofDefaultVec2>::setup(ofParameter<ofDefaultVec2>,float,float)'
+  c:\users\nyuad\documents\of_v0.10.1_vs2017_release\addons\ofxgui\src\ofxslidergroup.cpp(7): note: see reference to function template instantiation 'ofxVecSlider_<ofDefaultVec2> *ofxVecSlider_<ofDefaultVec2>::setup(ofParameter<ofDefaultVec2>,float,float)' being compiled
+  c:\users\nyuad\documents\of_v0.10.1_vs2017_release\addons\ofxgui\src\ofxslidergroup.cpp(64): note: see reference to class template instantiation 'ofxVecSlider_<ofDefaultVec2>' being compiled
+c:\users\nyuad\documents\of_v0.10.1_vs2017_release\addons\ofxgui\src\ofxslidergroup.cpp(59): warning C4267: 'argument': conversion from 'size_t' to 'glm::tvec2<float,0>::length_type', possible loss of data
+  c:\users\nyuad\documents\of_v0.10.1_vs2017_release\addons\ofxgui\src\ofxslidergroup.cpp(54): note: while compiling class template member function 'void ofxVecSlider_<ofDefaultVec2>::changeValue(VecType &)'
+          with
+          [
+              VecType=ofDefaultVec2
+          ]
+  c:\users\nyuad\documents\of_v0.10.1_vs2017_release\addons\ofxgui\src\ofxslidergroup.cpp(19): note: see reference to function template instantiation 'void ofxVecSlider_<ofDefaultVec2>::changeValue(VecType &)' being compiled
+          with
+          [
+              VecType=ofDefaultVec2
+          ]
+c:\users\nyuad\documents\of_v0.10.1_vs2017_release\addons\ofxgui\src\ofxslidergroup.cpp(26): warning C4267: 'argument': conversion from 'size_t' to 'glm::tvec4<float,0>::length_type', possible loss of data
+  c:\users\nyuad\documents\of_v0.10.1_vs2017_release\addons\ofxgui\src\ofxslidergroup.cpp(11): note: while compiling class template member function 'ofxVecSlider_<ofDefaultVec4> *ofxVecSlider_<ofDefaultVec4>::setup(ofParameter<ofDefaultVec4>,float,float)'
+  c:\users\nyuad\documents\of_v0.10.1_vs2017_release\addons\ofxgui\src\ofxslidergroup.cpp(7): note: see reference to function template instantiation 'ofxVecSlider_<ofDefaultVec4> *ofxVecSlider_<ofDefaultVec4>::setup(ofParameter<ofDefaultVec4>,float,float)' being compiled
+  c:\users\nyuad\documents\of_v0.10.1_vs2017_release\addons\ofxgui\src\ofxslidergroup.cpp(74): note: see reference to class template instantiation 'ofxVecSlider_<ofDefaultVec4>' being compiled
+c:\users\nyuad\documents\of_v0.10.1_vs2017_release\addons\ofxgui\src\ofxslidergroup.cpp(59): warning C4267: 'argument': conversion from 'size_t' to 'glm::tvec4<float,0>::length_type', possible loss of data
+  c:\users\nyuad\documents\of_v0.10.1_vs2017_release\addons\ofxgui\src\ofxslidergroup.cpp(54): note: while compiling class template member function 'void ofxVecSlider_<ofDefaultVec4>::changeValue(VecType &)'
+          with
+          [
+              VecType=ofDefaultVec4
+          ]
+  c:\users\nyuad\documents\of_v0.10.1_vs2017_release\addons\ofxgui\src\ofxslidergroup.cpp(19): note: see reference to function template instantiation 'void ofxVecSlider_<ofDefaultVec4>::changeValue(VecType &)' being compiled
+          with
+          [
+              VecType=ofDefaultVec4
+          ]
+c:\users\nyuad\documents\of_v0.10.1_vs2017_release\addons\ofxgui\src\ofxslidergroup.cpp(26): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  c:\users\nyuad\documents\of_v0.10.1_vs2017_release\addons\ofxgui\src\ofxslidergroup.cpp(11): note: while compiling class template member function 'ofxVecSlider_<ofVec3f> *ofxVecSlider_<ofVec3f>::setup(ofParameter<ofPoint>,float,float)'
+  c:\users\nyuad\documents\of_v0.10.1_vs2017_release\addons\ofxgui\src\ofxslidergroup.cpp(7): note: see reference to function template instantiation 'ofxVecSlider_<ofVec3f> *ofxVecSlider_<ofVec3f>::setup(ofParameter<ofPoint>,float,float)' being compiled
+  c:\users\nyuad\documents\of_v0.10.1_vs2017_release\addons\ofxgui\src\ofxslidergroup.cpp(84): note: see reference to class template instantiation 'ofxVecSlider_<ofVec3f>' being compiled
+c:\users\nyuad\documents\of_v0.10.1_vs2017_release\addons\ofxgui\src\ofxslidergroup.cpp(59): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data
+  c:\users\nyuad\documents\of_v0.10.1_vs2017_release\addons\ofxgui\src\ofxslidergroup.cpp(54): note: while compiling class template member function 'void ofxVecSlider_<ofVec3f>::changeValue(VecType &)'
+          with
+          [
+              VecType=ofVec3f
+          ]
+  c:\users\nyuad\documents\of_v0.10.1_vs2017_release\addons\ofxgui\src\ofxslidergroup.cpp(19): note: see reference to function template instantiation 'void ofxVecSlider_<ofVec3f>::changeValue(VecType &)' being compiled
+          with
+          [
+              VecType=ofVec3f
+          ]
+c:\users\nyuad\documents\of_v0.10.1_vs2017_release\libs\openframeworks\math\ofmatrix4x4.h(326): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file ..\..\..\..\..\addons\ofxRSSDK\src\ofxRSSDKv2.cpp)
+c:\users\nyuad\documents\of_v0.10.1_vs2017_release\libs\openframeworks\math\ofmatrix4x4.h(331): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file ..\..\..\..\..\addons\ofxRSSDK\src\ofxRSSDKv2.cpp)
+c:\users\nyuad\documents\of_v0.10.1_vs2017_release\libs\openframeworks\math\ofmatrix4x4.h(912): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file ..\..\..\..\..\addons\ofxRSSDK\src\ofxRSSDKv2.cpp)
+c:\users\nyuad\documents\of_v0.10.1_vs2017_release\libs\openframeworks\math\ofmatrix4x4.h(913): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file ..\..\..\..\..\addons\ofxRSSDK\src\ofxRSSDKv2.cpp)
+c:\users\nyuad\documents\of_v0.10.1_vs2017_release\libs\openframeworks\math\ofmatrix4x4.h(914): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file ..\..\..\..\..\addons\ofxRSSDK\src\ofxRSSDKv2.cpp)
+c:\users\nyuad\documents\of_v0.10.1_vs2017_release\libs\openframeworks\math\ofmatrix4x4.h(915): warning C4267: 'argument': conversion from 'size_t' to 'int', possible loss of data (compiling source file ..\..\..\..\..\addons\ofxRSSDK\src\ofxRSSDKv2.cpp)
+     Creating library bin\example-threshold_debug.lib and object bin\example-threshold_debug.exp
+  example-threshold.vcxproj -> C:\Users\nyuad\Documents\of_v0.10.1_vs2017_release\addons\ofxRSSDK\examples\windows\example-threshold\bin\example-threshold_debug.exe
+  
+  	                   2	C:\Users\nyuad\Documents\of_v0.10.1_vs2017_release\libs\fmodex\lib\vs\x64\
+  	  *EXTRA File 		 6942208	C:\Users\nyuad\Documents\of_v0.10.1_vs2017_release\addons\ofxRSSDK\examples\windows\example-threshold\bin\FreeImage.dll
+  	  *EXTRA File 		20321456	C:\Users\nyuad\Documents\of_v0.10.1_vs2017_release\addons\ofxRSSDK\examples\windows\example-threshold\bin\realsense2.dll
+  
+  	                   1	C:\Users\nyuad\Documents\of_v0.10.1_vs2017_release\libs\FreeImage\lib\vs\x64\
+  	  *EXTRA File 		 1503232	C:\Users\nyuad\Documents\of_v0.10.1_vs2017_release\addons\ofxRSSDK\examples\windows\example-threshold\bin\fmodex64.dll
+  	  *EXTRA File 		 1552384	C:\Users\nyuad\Documents\of_v0.10.1_vs2017_release\addons\ofxRSSDK\examples\windows\example-threshold\bin\fmodexL64.dll
+  	  *EXTRA File 		20321456	C:\Users\nyuad\Documents\of_v0.10.1_vs2017_release\addons\ofxRSSDK\examples\windows\example-threshold\bin\realsense2.dll
